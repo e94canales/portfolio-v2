@@ -9,11 +9,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
+    padding: 3.5% 5%;
     color: $font-primary;
 
+    @include desktopS {
+        padding: 5%;
+    }
+    @include mobile {
+        padding: 10% 5%;
+    }
     @include tablet {
-        padding: 7% 5%;
+        padding: 5%;
     }
 
     .logoContainer {
