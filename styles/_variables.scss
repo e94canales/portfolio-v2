@@ -9,15 +9,16 @@ $text-primary-hover: rgb(167, 162, 162);
 // BREAKPOINTS
 $mobile-size: 500px;
 $tablet-size: 800px;
-$desktopS-size: 1024px;
-$desktopL-size: 1500px;
+$desktopS-size: 1300px;
+$desktopL-size: 1700px;
+
 
 // FONTS
 $font-logo: 'Prata';
 $font-text: 'Quicksand';
 
 @mixin desktopL {
-    @media only screen and (max-width: $desktopL-size) {
+    @media only screen and (max-width: $desktopL-size) and (min-width: $desktopS-size) {
         @content
     }
 };
