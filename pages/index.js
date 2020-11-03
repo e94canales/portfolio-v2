@@ -14,7 +14,7 @@ export default function Home() {
 
       <div className={styles.background}>
         <img className={styles.backgroundImage} src='/images/buildings-min.png' />
-
+        <img className={styles.overlayImage} src='/images/connections.png' />
       </div>
 
     </Layout>
