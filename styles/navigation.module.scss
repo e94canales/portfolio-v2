@@ -2,36 +2,19 @@
 
 .nav {
     width: 100%;
-    height: 10%;
+    height: 10vh;
     position: fixed;
     z-index: 100;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5% 5%;
-    color: $font-primary;
-
-    @include desktopS {
-        padding: 5%;
-    }
-    @include mobile {
-        padding: 10% 5%;
-    }
-    @include tablet {
-        padding: 5%;
-    }
+    padding: 5.8vh 5vw;
+    color: $text-primary;
 
     .logoContainer {
-        width: 10%;
-        padding: 1%;
-
-        @include mobile {
-            width: 25%;
-        }
-        @include tablet {
-            width: 20%;
-        }
+        width: 10vw;
+        padding: 1vw;
 
         h4 {
             font-size: 1.5rem;
@@ -41,16 +24,10 @@
     }
 
     .links {
-        width: 15%;
+        width: 20vw;
         display: flex;
         justify-content: space-between;
 
-        @include desktopL {
-            width: $desktopL-size / 7;
-        }
-        @include desktopS {
-            width: $desktopS-size / 5;
-        }
         @include mobile {
             display: none;
         }
@@ -69,12 +46,61 @@
 
     .menuIcon {
         display: none;
+        cursor: pointer;
 
         @include mobile {
             display: initial;
         }
         @include tablet {
             display: initial;
+        }
+    }
+
+    .mobileMenuSidebar {
+        z-index: 100;
+        height: 100vh;
+        width: 40vw;
+        background-color: $accent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5vh 0 ;
+        color: $text-contrast;
+        font-family: $font-text;
+        display: none;
+        
+        @include tablet {
+            display: initial;
+        }
+        @include mobile {
+            display: initial;
+        }
+
+        .mobileLinks  {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10vh;
+
+            a {
+                padding: 2vh;
+
+                &:hover {
+                    color: $text-primary-hover;
+                }
+            }
+        }
+
+        .menuCloseIcon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 3vw;
+
+            &:hover {
+                color: $alert;
+                cursor: pointer;
+            }
         }
     }
 }

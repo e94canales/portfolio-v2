@@ -1,9 +1,12 @@
 import styles from '../styles/navigation.module.scss';
 
 import Icon from '../components/Icon'
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 export default function Navigation() {
+
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
 
     return (
         <div className={styles.nav}>
@@ -19,7 +22,22 @@ export default function Navigation() {
                 <a href='#'>github</a>
             </div>
 
-            <div className={styles.menuIcon}>
+            {menuIsOpen ?
+            <div className={styles.mobileMenuSidebar}>
+                <div className={styles.mobileLinks}>
+                <a href='#'>home</a>
+                <a href='#'>portfolio</a>
+                <a href='#'>github</a>
+                </div>
+
+                <div className={styles.menuCloseIcon} onClick={() => {setMenuIsOpen(false)}}>
+                <Icon iconName={faTimes} />
+                </div>
+
+            </div>  : null
+            }
+            
+            <div className={styles.menuIcon} onClick={() => {setMenuIsOpen(!menuIsOpen)}}>
                 <Icon iconName={faBars}/>
             </div>
         </div>

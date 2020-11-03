@@ -14,13 +14,23 @@
         height: 100%;
         top: 0;
         left: 0;
-        opacity: 0.2;
+        opacity: 0.33;
         filter: grayscale(100%) blur(8px);
-        animation: overlayImage 5s ease-in-out alternate infinite;
+        animation: overlayImage 3s ease-in-out alternate infinite;
 
         @keyframes overlayImage {
             from {filter: blur(8px);}
             to {filter: blur(0px)}
           }
     }
+}
+
+.mainContentContainer {
+    margin-top: 11.9vh;
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

@@ -12,9 +12,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* BACKGROUND */}
       <div className={styles.background}>
         <img className={styles.backgroundImage} src='/images/buildings-min.png' />
         <img className={styles.overlayImage} src='/images/connections.png' />
+      </div>
+
+      {/* MAIN CONTENT */}
+      <div className={styles.mainContentContainer}>
+        
       </div>
 
     </Layout>
