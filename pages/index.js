@@ -1,8 +1,8 @@
 import Head from 'next/head';
+import styles from '../styles/home.module.scss';
 
 // COMPONENTS
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
 
 export default function Home() {
   return (
@@ -11,8 +11,11 @@ export default function Home() {
         <title>Erick Canales - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <Navigation />
+
+      <div className={styles.background}>
+        <img className={styles.backgroundImage} src='/images/buildings-min.png' />
+
+      </div>
 
     </Layout>
   )

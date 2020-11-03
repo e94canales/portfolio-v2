@@ -1,5 +1,8 @@
 import styles from '../styles/navigation.module.scss';
 
+import Icon from '../components/Icon'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 export default function Navigation() {
 
     return (
@@ -14,6 +17,10 @@ export default function Navigation() {
                 <a href='#'>home</a>
                 <a href='#'>portfolio</a>
                 <a href='#'>github</a>
+            </div>
+
+            <div className={styles.menuIcon}>
+                <Icon iconName={faBars}/>
             </div>
         </div>
     )

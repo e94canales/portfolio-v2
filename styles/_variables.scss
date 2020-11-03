@@ -1,3 +1,38 @@
-/* COLORS */
+// COLORS
 $primary: rgb(243, 243, 243);
 $accent: rgb(134, 83, 74);
+$font-primary: rgb(31, 31, 31);
+
+// BREAKPOINTS
+$mobile-size: 500px;
+$tablet-size: 800px;
+$desktopS-size: 1024px;
+$desktopL-size: 1500px;
+
+// FONTS
+$font-logo: 'Prata';
+$font-text: 'Quicksand';
+
+@mixin desktopL {
+    @media only screen and (max-width: $desktopL-size) {
+        @content
+    }
+};
+
+@mixin desktopS {
+    @media only screen and (max-width: $desktopS-size) {
+        @content
+    }
+};
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-size) {
+        @content
+    }
+};
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-size) {
+        @content
+    }
+};
