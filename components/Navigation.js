@@ -1,5 +1,5 @@
 import styles from '../styles/navigation.module.scss';
-
+import { useSelector } from 'react-redux';
 import Icon from '../components/Icon'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
@@ -8,8 +8,15 @@ export default function Navigation() {
 
     const [menuIsOpen, setMenuIsOpen] = useState(false)
 
+    const modalStatus = useSelector( state => {
+        return {
+            modalType: state.home.modalType,
+            modalActive: state.home.modalActive
+        }   
+    })
+
     return (
-        <div className={styles.nav}>
+        <div className={modalStatus.modalActive === true && modalStatus.modalType === 'showcase' ? styles.showcaseNav : styles.nav}>
             <div className={styles.logoContainer}>
                 <h4>
                     erick canales

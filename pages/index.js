@@ -9,11 +9,11 @@ import Modal from '../components/Modal';
 
 export default function Home() {
 
-  const globalState = useSelector(state => {
-    return state.global
-  })
-  const homeState = useSelector(state => {
-    return state.home
+  const state = useSelector(state => {
+    return {
+      globalState: state.global,
+      homeState: state.home,
+    }
   })
 
   const dispatch = useDispatch();
@@ -36,13 +36,14 @@ export default function Home() {
       </div>
 
       {/* MAIN CONTENT */}
-      <div className={styles.mainContentContainer}>
-        {homeState.modalActive === false ? (
+      <div className={styles.mainContentContainer}> {/* MODALS */}
+        {state.homeState.modalActive === false ? (
           <div />
         ) : (
-          <Modal type={homeState.modalType} />
+          <Modal type={state.homeState.modalType} />
         )}
-        <div className={styles.info}>
+
+        <div className={state.homeState.modalActive === true && state.homeState.modalType === 'showcase' ? styles.hide : styles.info}>
           <h3>Full Stack Web Developer</h3>
           <h4>javascript • react • css • html • java • python</h4>
           <div className={styles.verticalLine} />
