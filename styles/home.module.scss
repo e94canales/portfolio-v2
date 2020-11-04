@@ -1,3 +1,5 @@
+@use '/styles/variables' as *;
+
 .background {
     width: 100%;
     height: 100%;
@@ -27,10 +29,78 @@
 
 .mainContentContainer {
     margin-top: 12vh;
-    height: auto;
+    padding-bottom: 12vh;
+    height: 88vh;
     width: 100%;
-    z-index: 100;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-text;
+
+    .info {
+        background-color: $accent;
+        width: 45vw;
+        position: fixed;
+        padding: 7vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile {
+            width: 60vw;
+            padding: 10vw 7vw;
+        }
+
+        h3 {
+            font-size: 2.2vw;
+            font-family: $font-header;
+            text-align: center;
+            color: rgb(250, 250, 250);
+
+            @include mobile {
+                font-size: 4vw;
+            }
+        }
+        h4 {
+            text-align: center;
+            font-size: 1.3vw;
+            color: rgb(170, 170, 170);
+
+            @include mobile {
+                font-size: 2vw;
+            }
+        }
+        .verticalLine {
+            height: 4.8vh;
+            width: 1px;
+            border: 1px solid rgba(75, 48, 48, 0.815);
+            position: absolute;
+            bottom: -4.8vh;
+        }
+
+        .bottomNav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            bottom: -7.3vh;
+
+            .item {
+                width: 50%;
+                border: 1px solid rgba(75, 48, 48, 0.815);
+                text-align: center;
+                padding: 1%;
+                color: $text-alternative;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba($accent, 0.50);
+                    color: $primary;
+                }
+            }
+        }
+    }
 }

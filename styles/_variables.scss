@@ -1,10 +1,12 @@
 // COLORS
-$primary: rgb(243, 243, 243);
-$accent: rgb(134, 83, 74);
-$text-primary: rgb(31, 31, 31);
-$text-contrast: rgb(224, 223, 223);
-$alert: rgb(250, 93, 93);
-$text-primary-hover: rgb(167, 162, 162);
+$primary: #f3f3f3;
+$accent: #86534a;
+$black: #252525;
+$text-primary: #1f1f1f;
+$text-alternative: #727171;
+$text-contrast: #c7c7c7;
+$alert: #fa5d5d;
+$text-primary-hover: #a7a2a2;
 
 // BREAKPOINTS
 $mobile-size: 500px;
@@ -16,6 +18,7 @@ $desktopL-size: 1700px;
 // FONTS
 $font-logo: 'Prata';
 $font-text: 'Quicksand';
+$font-header: 'Open Sans';
 
 @mixin desktopL {
     @media only screen and (max-width: $desktopL-size) and (min-width: $desktopS-size) {
