@@ -39,7 +39,7 @@ $font-header: 'Open Sans';
 };
 
 @mixin tablet {
-    @media only screen and (max-width: $tablet-size) {
+    @media only screen and (max-width: $tablet-size) and (min-width: $mobile-size){
         @content
     }
 };
