@@ -106,6 +106,10 @@
             right: 0;
             padding: 8vw;
 
+            @include tablet {
+                padding: 4vw;
+            }
+
             &:hover {
                 color: $alert;
                 cursor: pointer;

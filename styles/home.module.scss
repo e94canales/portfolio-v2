@@ -41,7 +41,7 @@
     font-family: $font-text;
 
     @include mobile {
-        padding-bottom: 25vh;
+        padding-bottom: 45vh;
     }
     @include tablet {
         padding-bottom: 25vh;
@@ -58,11 +58,11 @@
         justify-content: center;
 
         @include mobile {
-            width: 80vw;
-            height: 20vh;
+            width: 100vw;
+            height: 30vh;
         }
         @include tablet {
-            width: 65vw;
+            width: 75vw;
             height: 25vh;
         }
 
