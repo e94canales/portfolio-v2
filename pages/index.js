@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/home.module.scss";
-import { useState } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { homeActions } from '../redux/actions';
 
 // COMPONENTS
 import Layout from "../components/Layout";
@@ -8,7 +9,14 @@ import Modal from '../components/Modal';
 
 export default function Home() {
 
-  const [ modalType, setModalType ] = useState(null);
+  const globalState = useSelector(state => {
+    return state.global
+  })
+  const homeState = useSelector(state => {
+    return state.home
+  })
+
+  const dispatch = useDispatch();
 
   return (
     <Layout>
@@ -29,10 +37,10 @@ export default function Home() {
 
       {/* MAIN CONTENT */}
       <div className={styles.mainContentContainer}>
-        {modalType === null ? (
+        {homeState.modalActive === false ? (
           <div />
         ) : (
-          <Modal type={modalType} setModalType={setModalType} />
+          <Modal type={homeState.modalType} />
         )}
         <div className={styles.info}>
           <h3>Full Stack Web Developer</h3>
@@ -42,7 +50,10 @@ export default function Home() {
             <div className={styles.item} onClick={() => setModalType("intro")}>
               <h5>intro</h5>
             </div>
-            <div className={styles.item} onClick={() => setModalType("showcase")}>
+            <div className={styles.item} onClick={() => {
+              dispatch(homeActions.setModalType("showcase"))
+              dispatch(homeActions.toggleModalActive())
+            }}>
               <h5>showcase</h5>
             </div>
             <a
