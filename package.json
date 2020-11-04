@@ -16,6 +16,7 @@
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-responsive-carousel": "^3.2.10",
     "sass": "^1.28.0"
   }
 }

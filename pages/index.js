@@ -1,9 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/home.module.scss";
+import { useState } from "react";
 
 // COMPONENTS
 import Layout from "../components/Layout";
-import { useState } from "react";
+import Modal from '../components/Modal';
 
 export default function Home() {
 
