@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-.modalContainer {
+.modalShowcaseContainer {
     position: absolute;
     width: 100%;
     height: 88vh;
@@ -23,25 +23,186 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(19, 19, 19, 0.5);
+        background-color: $primary;
         color: white;
         z-index: 1000;
         top: 3vh;
         right: 2vw;
         border-radius: 100%;
-        padding: 8px 20px;
+        width: 30px;
+        height: 30px;
         font-family: $font-text;
+        cursor: pointer;
 
         .iconContainer {
-            font-size: 2vw;
+            font-size: 1rem;
             color: $alert;
+
+            &:hover {
+                color: red;
+            }
+        }
+    } 
+}
+
+    .info {
+        background-color: $accent;
+        width: 45vw;
+        position: fixed;
+        padding: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+        @include mobile {
+            width: 100vw;
+            height: 30vh;
+        }
+        @include tablet {
+            width: 75vw;
+            height: 25vh;
+        }
+        .detailContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 4%;
+            position: relative;
+
+            h5 {
+                font-size: 2.2vw;
+                font-family: $font-header;
+                text-align: center;
+                color: rgb(250, 250, 250);
+    
+                @include mobile {
+                    font-size: 5vw;
+                }
+                @include tablet {
+                    font-size: 3vw;
+                }
+            }
+            .portrait {
+                width: 3vw;
+                position: absolute;
+                border-radius: 50%;
+                top: 0;
+                right: 0;
+            }
+        }
+        
+        h4 {
+            font-size: 1vw;
+            color: $primary;
+
+            @include mobile {
+                font-size: 2.3vw;
+            }
+            @include tablet {
+                font-size: 1.4vw;
+            }
+        } 
+        .introCloseIcon {
+            color: $alert;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1vw;
+            font-size: 2ch;
             cursor: pointer;
 
             &:hover {
-                color: rgb(252, 57, 57);
+                color: red;
             }
         }
     }
-    
-   
-}
+
+    .contactContainer {
+        background-color: $accent;
+        width: 45vw;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .title {
+            color: $primary;
+            font-size: 2vw;
+            width: 90%;
+            border-bottom: 1px solid $primary;
+            padding: 1% 2%;
+        }
+        .submitButton {
+            padding: 1%;
+            margin-bottom: 3%;
+            border-radius: 15px;
+            width: 20%;
+            cursor: pointer;
+            background-color: $primary;
+            color: $text-alternative;
+            border: none;
+
+            &:hover {
+                background-color: black;
+                color: $primary;
+            }
+        }
+        .contactCloseIcon {
+            color: $alert;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: .7vw;
+            font-size: 2ch;
+            cursor: pointer;
+
+            &:hover {
+                color: red;
+            }
+        }
+        .formContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .namesContainer {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                .nameInput {
+                    width: 46%;
+                    margin: 2%;
+                    padding: 2% 5%;
+                }
+            }
+            .emailInputContainer {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                .emailInput {
+                    width: 96%;
+                    padding: 2% 5%;
+                }
+            }
+            .contentContainer {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                .contentInput {
+                    width: 96%;
+                    min-height: 100%;
+                    margin: 2%;
+                }
+            }
+            
+        }
+    }
