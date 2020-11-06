@@ -39,6 +39,10 @@
     align-items: center;
     font-family: $font-text;
 
+    @include mobile {
+        padding-bottom: 25%;
+    }
+
     .info {
         background-color: $accent;
         width: 45vw;
