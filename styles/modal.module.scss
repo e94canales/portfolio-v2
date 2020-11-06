@@ -189,11 +189,11 @@
         align-items: center;
         justify-content: center;
         border-radius: 15px;
-        // margin-top: 5vw;
         filter: drop-shadow(3px 2px 2px rgb(99, 99, 99));
 
         @include desktopL {
             width: $desktopL-size / 4;
+            padding: 8% 3%;
         }
         @include desktopS {
             width: $desktopS-size / 3;
@@ -201,19 +201,15 @@
         @include mobile {
             width: 70%;
             margin-top: 15%;
-            // padding: 5%;
         }
         @include tablet{
             width: 70vw;
-            // margin-top: 25%;
-            // padding: 5%;
         }
 
         .title {
             color: $primary;
             font-size: 2vw;
             padding-bottom: 5%;
-            // margin-bottom: 15%;
 
             @include mobile {
                 font-size: 4vw;
@@ -285,7 +281,6 @@
 
                 .submitButton {
                     padding: 2%;
-                    // margin-bottom: 3%;
                     border-radius: 15px;
                     width: 100%;
                     cursor: pointer;
