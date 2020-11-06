@@ -1,6 +1,6 @@
 // COLORS
 $primary: #f3f3f3;
-$accent: #86534a;
+$accent: #353535;
 $black: #252525;
 $text-primary: #2e2d2d;
 $text-alternative: #727171;
@@ -20,6 +20,7 @@ $font-logo: 'Prata';
 $font-text: 'Quicksand';
 $font-header: 'Open Sans';
 
+
 @mixin desktopL {
     @media only screen and (max-width: $desktopL-size) and (min-width: $desktopS-size) {
         @content
@@ -27,7 +28,7 @@ $font-header: 'Open Sans';
 };
 
 @mixin desktopS {
-    @media only screen and (max-width: $desktopS-size) {
+    @media only screen and (max-width: $desktopS-size) and (min-width: $tablet-size){
         @content
     }
 };

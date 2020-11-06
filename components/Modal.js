@@ -121,11 +121,11 @@ export default function Modal(props) {
     return (
       <div className={styles.contactContainer}>
         <div className={styles.title}>
-          <h5>Contact</h5>
+          <h5>Say Hello!</h5>
         </div>
         <div className={styles.formContainer}>
           <form autoComplete="off">
-            <div className={styles.namesContainer}>
+            {/* <div className={styles.namesContainer}> */}
               <input
                 name="firstName"
                 placeholder="First Name"
@@ -140,8 +140,8 @@ export default function Modal(props) {
                 onChange={formHandler}
                 className={styles.nameInput}
               ></input>
-            </div>
-            <div className={styles.emailInputContainer}>
+            {/* </div> */}
+            {/* <div className={styles.emailInputContainer}> */}
               <input
                 type="email"
                 name="email"
@@ -150,19 +150,21 @@ export default function Modal(props) {
                 onChange={formHandler}
                 className={styles.emailInput}
               ></input>
-            </div>
-            <div className={styles.contentContainer}>
+            {/* </div> */}
+            {/* <div className={styles.contentContainer}> */}
               <textarea
                 rows="9"
                 name="content"
                 value={formData.content}
                 onChange={formHandler}
                 className={styles.contentInput}
+                placeholder='Type your message here'
               ></textarea>
-            </div>
+            {/* </div> */}
+            <button onClick={submitHandler} className={styles.submitButton}>Submit</button>
           </form>
         </div>
-        <button onClick={submitHandler} className={styles.submitButton}>Submit</button>
+        
 
         <div
           className={styles.contactCloseIcon}
