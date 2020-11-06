@@ -2,7 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function ResCarousel(props) {
   return (
-    <Carousel autoPlay>
+    <Carousel autoPlay infiniteLoop stopOnHover>
       <div>
         <img src="/images/gol-min.webp" alt='Game of Life'/>
         <p className="legend">Game of Life - <a href='https://gameoflife-e94.netlify.app/'>Deploy</a> | <a href='https://github.com/e94canales/game-of-life'>GitHub</a></p>
