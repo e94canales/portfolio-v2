@@ -98,13 +98,10 @@ export default function Modal(props) {
           <img src="/images/portrait.webp" className={styles.portrait} />
         </div>
         <h4>
-          Welcome. My name is Erick Canales and I am a full time Web Development
-          student at Lambda living in California. I've always been a creative
-          type, starting off with music and now expanding into the web
+          Welcome! I am a Full Stack Web Developer living in California. I'm always learning something new, whether it be a new framework or expanding my knowledge on a language I already know. I've always been a creative
+          type, starting off with music production and now expanding into the web
           development realm. I enjoy creating things that can resonate with
-          people and are helpful. If you haven't checked out my work, you can
-          through here. If you're like me and like looking at pretty things,
-          here's my showcase.
+          people and are helpful. I like to make my projects as accessible and inclusive as possible. Feel free to contact me for any inquiries, I read all of them!
         </h4>
 
         <div
