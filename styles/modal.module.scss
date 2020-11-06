@@ -22,14 +22,14 @@
             margin-top: 3vw;
             width: 75vw;
         }
-        // @include mobile {
-        //     margin-top: 7vw;
-        //     width: 90vw;
-        // }
-        // @include tablet {
-        //     margin-top: 7vw;
-        //     width: 90vw;
-        // }
+        @include mobile {
+            // margin-top: 7vw;
+            width: 90vw;
+        }
+        @include tablet {
+            // margin-top: 7vw;
+            width: 90vw;
+        }
 
     }
 
