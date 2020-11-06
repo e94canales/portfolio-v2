@@ -22,14 +22,14 @@
             margin-top: 3vw;
             width: 75vw;
         }
-        @include mobile {
-            margin-top: 7vw;
-            width: 90vw;
-        }
-        @include tablet {
-            margin-top: 7vw;
-            width: 90vw;
-        }
+        // @include mobile {
+        //     margin-top: 7vw;
+        //     width: 90vw;
+        // }
+        // @include tablet {
+        //     margin-top: 7vw;
+        //     width: 90vw;
+        // }
 
     }
 
@@ -71,6 +71,7 @@
         justify-content: center;
         z-index: 100;
         border-radius: 15px;
+        position: relative;
         filter: drop-shadow(3px 2px 2px rgb(99, 99, 99));
         
         @include desktopS {
