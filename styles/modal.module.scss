@@ -23,11 +23,11 @@
             width: 75vw;
         }
         @include mobile {
-            // margin-top: 7vw;
+            margin-top: 7%;
             width: 90vw;
         }
         @include tablet {
-            // margin-top: 7vw;
+            margin-top: 7%;
             width: 90vw;
         }
 
@@ -182,7 +182,7 @@
     .contactContainer {
         background-color: $accent;
         width: 25%;
-        height: 70%;
+        height: 70vh;
         position: fixed;
         padding: 3%;
         display: flex;
