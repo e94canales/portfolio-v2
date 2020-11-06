@@ -25,8 +25,8 @@ export default function Navigation() {
 
             <div className={styles.links}>
                 <a href='#'>home</a>
-                <a href='#'>portfolio</a>
-                <a href='#'>github</a>
+                <a href='https://linkedin.com/in/e94canales' target='_blank'>linkedin</a>
+                <a href='https://github.com/e94canales' target='_blank'>github</a>
             </div>
 
             {menuIsOpen ?
