@@ -28,8 +28,7 @@
 }
 
 .mainContentContainer {
-    margin-top: 12vh;
-    padding-bottom: 12vh;
+    padding-top: 12vh;
     height: 88vh;
     width: 100%;
     position: absolute;
@@ -39,7 +38,6 @@
     justify-content: center;
     align-items: center;
     font-family: $font-text;
-
 
     .info {
         background-color: $accent;
