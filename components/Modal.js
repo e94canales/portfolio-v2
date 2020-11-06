@@ -64,6 +64,9 @@ export default function Modal(props) {
     }).catch(err => {
       return
     });
+
+    dispatch(homeActions.setModalType(null));
+    dispatch(homeActions.toggleModalActive("override", false));
   }
 
   if (homeState.modalType === "showcase") {
