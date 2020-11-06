@@ -191,7 +191,7 @@
         justify-content: center;
         z-index: 100;
         border-radius: 15px;
-        margin-top: 5vw;
+        // margin-top: 5vw;
         filter: drop-shadow(3px 2px 2px rgb(99, 99, 99));
 
         @include desktopL {
@@ -202,12 +202,12 @@
         }
         @include mobile {
             width: 70%;
-            margin-top: 35%;
+            // margin-top: 35%;
             padding: 5%;
         }
         @include tablet{
             width: 70vw;
-            margin-top: 25%;
+            // margin-top: 25%;
             padding: 5%;
         }
 
