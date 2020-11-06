@@ -155,6 +155,15 @@
             @include tablet {
                 font-size: 2.3vw;
             }
+
+            .contactMe {
+                color: rgb(132, 132, 255);
+
+                &:hover {
+                    color:  rgb(160, 160, 255);
+                    cursor: pointer;
+                }
+            }
         } 
         .introCloseIcon {
             color: $alert;
