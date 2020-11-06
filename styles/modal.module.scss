@@ -180,7 +180,7 @@
     .contactContainer {
         background-color: $accent;
         width: 25%;
-        height: 75%;
+        height: auto;
         position: relative;
         padding: 3%;
         display: flex;
@@ -211,7 +211,7 @@
         .title {
             color: $primary;
             font-size: 2vw;
-            padding: 2%;
+            padding: 5%;
             // margin-bottom: 15%;
 
             @include mobile {
@@ -256,6 +256,7 @@
                 input {
                     width: 100%;
                     padding: 2%;
+                    margin: 2% 0;
                     border:none;
                     border-bottom: 1px solid $primary;
                     background-image:none;
@@ -278,6 +279,7 @@
                     outline: none;
                     padding: 2%;
                     font-family: $font-text;
+                    margin: 5% 0;
                 }
 
                 .submitButton {
