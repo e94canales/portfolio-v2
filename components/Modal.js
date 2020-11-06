@@ -99,7 +99,7 @@ export default function Modal(props) {
         </div>
         <h4>
           Welcome! I am a Full Stack Web Developer living in California. I'm always learning something new, whether it be a new framework or expanding my knowledge on a language I already know. I've always been a creative
-          type, starting off with music production and now expanding into the web
+          type - starting off with music production and now expanding into the web
           development realm. I enjoy creating things that can resonate with
           people and are helpful. I like to make my projects as accessible and inclusive as possible. Feel free to contact me for any inquiries, I read all of them!
         </h4>
