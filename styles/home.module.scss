@@ -40,6 +40,12 @@
     align-items: center;
     font-family: $font-text;
 
+    @include mobile {
+        padding-bottom: 20vh;
+    }
+    // @include tablet {
+    //     padding-bottom: 25vh;
+    // }
 
     .info {
         background-color: $accent;
